@@ -1,6 +1,6 @@
 {
-  "name": "InfoDisplayWeb",
-  "version": "0.1.1",
+  "name": "infodisplaweb",
+  "version": "0.2.0",
   "description": "InfoDisplayWeb is a web server for presenting daily info, news, slides(JPG) and configured web-pages.",
   "main": "infoDisplayWeb.js",
   "dependencies": {
@@ -16,6 +16,10 @@
   "scripts": {
     "start": "node infoDisplayWeb.js", 
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vinz68/infodisplayweb.git"
   },
   "keywords": [],
   "author": "VibeSoft - Vincent van Beek",

@@ -14,9 +14,11 @@ var fs = require('fs');                     // We will use the native file syste
 var os = require('os');                     // OS specific info
 var config = require('./infoDisplayConfig.json'); 	// Configuration file of this module which includes Logger configuration (log4js)
 
+var APPNAME = "InfoDisplayWeb";             // Name of this app
+var PORT = process.env.PORT || 8088;        // Node will listen on port from environment setting, or when not set to port number...
+
 var app = express();                        // W're using Express
-var port = 80;                              // Node will listen on port number...
-var hostname = 'localhost';                 // our hostname
+
 
 var pagesList = [];	                        // Array with pages (URLs and settings) to be shown by the client browser in a slide show.
 
@@ -148,9 +150,10 @@ app.get('/news/:source', function(req, res) {
 
 //--------------------------------------------------------------------------------------------------------
 // Main     => Setup the server / start listening on configured IP & Port.
-var server = app.listen(port, function () {
-    // Log info on which port our webserver is listening....
-    logger.info('InfoDisplay app listening on port:' + server.address().port);
+var server = app.listen(PORT, function () {
+    // Log that we have started and accept incomming connections on the configured port/
+    logger.info(APPNAME + " is ready and listening on port: " + PORT);
+    console.log(APPNAME + " is ready and listening on port: " + PORT);
 });
 //--------------------------------------------------------------------------------------------------------
 
