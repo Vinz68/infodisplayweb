@@ -10,7 +10,7 @@ InfoDisplayWeb is based on:
 * **NodeJS:**  ([https://nodejs.org/en/](https://nodejs.org/en/))
 * **NodeJS and NPM are required**
  
-It is developed on Ubuntu (both physical machine as an Azure VM)but might run on other hardware which is supported by NodeJS.
+It is developed on Ubuntu (both physical machine as an Azure VM) but might run on other hardware which is supported by NodeJS.
 There is also a version for a raspberry pi see: "InfoDisplay" package in my github.
 
 
