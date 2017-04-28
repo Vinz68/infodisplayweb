@@ -45,11 +45,15 @@ npm start
 ## Known problems
 
 When using port 80 you might get a root permission issue; and will get this message:
+
 **Error: listen EACCES 0.0.0.0:80**
 
 Resolve this errror by opening infodisplayweb.js and change the PORT to another port (e.g. 8080),
-OR set the PORT environmet variable to another port (e.g. 8080)
-OR Allow node to Run on port 80 (without root permissions):
+
+**OR** set the PORT environmet variable to another port (e.g. 8080)
+
+**OR** Allow node to Run on port 80 (without root permissions):
+
 ```sh
 sudo setcap 'cap_net_bind_service=+ep' /usr/bin/nodejs
 ```
