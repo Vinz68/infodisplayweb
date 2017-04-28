@@ -1,0 +1,22 @@
+﻿{
+  "slidesDirectory": "/home/pi/shared/infoDisplay/*.JPG",
+  "imageDirectory": "/home/pi/html/images/",
+  "htmlDirectory": "/home/pi/html/",
+  "slidesFile": "./modules/slides/slides.json",
+
+  "log4js": {
+    "appenders": [
+      {
+        "type": "file",
+        "filename": "logs/infoDisplay.log",
+        "maxLogSize": 2048000,
+        "backups": 3
+      }
+    ],
+    "levels": {
+      "NewSlidesHandler": "WARN"
+    },
+    "replaceConsole": false
+  }
+
+}
