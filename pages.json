@@ -1,0 +1,29 @@
+{
+  "timestamp": "2016-10-27T21:53:18Z",
+  "pages": [
+    {
+      "title": "Weather - Buienradar",
+      "type": "webpage",
+      "interval": 20000,
+      "url": "http://infodisplay.fritz.box/weer.html"
+    },
+    {
+      "title": "Traffic - BingMap",
+      "type": "webpage",
+      "interval": 20000,
+      "url": "http://infodisplay.fritz.box/verkeer.html"
+    },
+    {
+      "title": "Algemeen Nieuws",
+      "type": "webpage",
+      "interval": 20000,
+      "url": "http://infodisplay.fritz.box/news/Nieuws_NL_BE"
+    },
+    {
+      "title": "Gezondheidsnieuws",
+      "type": "webpage",
+      "interval": 20000,
+      "url": "http://infodisplay.fritz.box/news/GezondheidNews"
+    }
+  ]
+}

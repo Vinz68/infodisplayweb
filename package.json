@@ -1,0 +1,23 @@
+{
+  "name": "InfoDisplayWeb",
+  "version": "0.1.1",
+  "description": "InfoDisplayWeb is a web server for presenting daily info, news, slides(JPG) and configured web-pages.",
+  "main": "infoDisplayWeb.js",
+  "dependencies": {
+    "chokidar": "^1.6.1",
+    "dot": "^1.1.1",
+    "express": "^4.14.1",
+    "log4js": "^0.6.38",
+    "onoff": "^1.1.1",
+    "request": "^2.79.0",
+    "xml-js": "^0.9.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node infoDisplayWeb.js", 
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "VibeSoft - Vincent van Beek",
+  "license": "MIT"
+}

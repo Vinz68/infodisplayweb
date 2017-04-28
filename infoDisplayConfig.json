@@ -1,0 +1,20 @@
+{
+    "log4js": {
+        "appenders": [
+        {
+            "type": "file",
+            "filename": "logs/infoDisplay.log",
+            "maxLogSize": 20000000,
+            "backups": 3
+        }],
+        "levels": {
+            "InfoDisplay": "INFO",
+            "NewSlidesHandler": "WARN",
+            "OutputFeed": "WARN",
+            "CombineReader": "WARN",
+            "FeedReader": "WARN",
+            "NewsHandler": "WARN"
+        },
+        "replaceConsole": false
+    }
+}

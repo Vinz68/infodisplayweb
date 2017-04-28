@@ -1,0 +1,24 @@
+{
+	"newsTemplateFolder": "/home/pi/nodeJsApps/infodisplay/modules/news/",
+	"newsIndexFeed": "index",
+	"newsSources": "/home/pi/nodeJsApps/infodisplay/modules/news/newsSources.json",
+	"refreshDelaySource": 300000,
+	"refreshDelayOutput": 30000,
+	"log4js": {
+		"appenders": [
+      {
+        "type": "file",
+        "filename": "logs/infoDisplay.log",
+        "maxLogSize": 2048000,
+        "backups": 3
+      }
+		],
+    "levels": {
+      "OutputFeed": "WARN",
+      "CombineReader": "WARN",
+      "FeedReader": "WARN",
+      "NewsHandler": "WARN"
+    },
+		"replaceConsole": false
+	}
+}
