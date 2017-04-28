@@ -18,9 +18,9 @@ There is also a version for a raspberry pi see: "InfoDisplay" package in my gith
 
 ### InfoDisplayWeb
 
-fork the repository to your github account.
-on you machine make a folder (I used /home/vincent/nodeJsApps)
-clone the repository into this folder and install the needed node modules
+* fork the repository to your github account.
+* on you machine make a folder (I used /home/vincent/nodeJsApps)
+* clone the repository into this folder and install the needed node modules
 
 ```sh
 git clone https://github.com/Vinz68/logTest.git
