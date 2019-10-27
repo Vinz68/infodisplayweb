@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Weer</title>
+
+	<!-- Bootstap CDN=> Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Bootstap CDN => Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="row">
+	<div class="col-sm-1"> </div>
+
+        <div class="col-sm-5">
+            <div class="page-header">
+                <h1>Weersverwachting</h1>
+            </div>
+       		<a href="http://www.accuweather.com/en/nl/the-hague/251687/weather-forecast/251687" class="aw-widget-legal">
+			<!--
+			By accessing and/or using this code snippet, you agree to AccuWeather’s terms and conditions (in English) which can be found at http://www.accuweather.com/en/free-weather-widgets/terms and AccuWeather’s Privacy Statement (in English) which can be found at http://www.accuweather.com/en/privacy.
+			-->
+			</a><div id="awtd1470640751871" class="aw-widget-36hour"  data-locationkey="251687" data-unit="c" data-language="nl" data-useip="false" data-uid="awtd1470640751871" data-editlocation="false"></div><script type="text/javascript" src="http://oap.accuweather.com/launch.js"></script>
+		</div>
+        <div class="col-sm-5">
+            <div class="page-header">
+                <h1>Buienradar <small>Komende 3 uur</small></h1>
+            </div>
+			<img style="-webkit-user-select: none; width: 650px; height: 612px;" src="http://api.buienradar.nl/image/1.0/RadarMapNL?w=700&amp;h=765">
+			<!-- do not use the one below: the zooming works only for the background, not for the clouds....
+            <iframe id="buienradarframe" src="http://www.buienradar.nl/lokalebuienradar/?lat=52.07667&lng=4.29861&overname=2&zoom=6&naam=den haag&size=3&voor=1" scrolling=no width=650 height=612 frameborder=no style="transform: scale(1.51); transform-origin: 0 0;" ></iframe>
+			-->
+        </div>
+
+        <div class="col-sm-3"></div>
+
+        <div class="col-sm-2"></div>
+
+    </div>
+
+    <!-- javascript, Placed at the end of the document so the pages load faster -->
+	
+	<!-- jQuery CDN => jQuery 2.x -->
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	
+	<!-- Bootstap CDN => Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</body>
+</html>

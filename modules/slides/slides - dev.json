@@ -2,37 +2,37 @@
     "timestamp": "2016-08-19 16:29:25",
     "pages": [
       {
-        "title": "Cerner Info - Slide1",
+        "title": "Info - Slide1",
         "type": "webpage",
         "interval": 10000,
         "url": "http://infodisplay.fritz.box/Slide1.JPG.html"
       },
       {
-        "title": "Cerner Info - Slide2",
+        "title": "Info - Slide2",
         "type": "webpage",
         "interval": 10000,
         "url": "http://infodisplay.fritz.box/Slide2.JPG.html"
       },
       {
-        "title": "Cerner Info - Slide3",
+        "title": "Info - Slide3",
         "type": "webpage",
         "interval": 10000,
         "url": "http://infodisplay.fritz.box/Slide3.JPG.html"
       },
       {
-        "title": "Cerner Info - Slide4",
+        "title": "Info - Slide4",
         "type": "webpage",
         "interval": 10000,
         "url": "http://infodisplay.fritz.box/Slide4.JPG.html"
       },
       {
-        "title": "Cerner Info - Slide5",
+        "title": "Info - Slide5",
         "type": "webpage",
         "interval": 10000,
         "url": "http://infodisplay.fritz.box/Slide5.JPG.html"
       },
       {
-        "title": "Cerner Info - Slide6",
+        "title": "Info - Slide6",
         "type": "webpage",
         "interval": 10000,
         "url": "http://infodisplay.fritz.box/Slide6.JPG.html"

@@ -1,8 +1,8 @@
 ﻿{
   "slidesDirectory": "/var/powerpoint_samba/infoDisplay/*.JPG",
-  "imageDirectory": "/home/pi/InfoDisplay/html/infodisplay/images/",
-  "htmlDirectory": "/home/pi/InfoDisplay/html/infodisplay/",
-  "slidesFile": "./modules/slides/slides.json",
+  "htmlDirectory":   "./html/",
+  "imageDirectory":  "./html/images/",
+  "slidesFile":      "./modules/slides/slides.json",  
 
   "log4js": {
     "appenders": [

@@ -209,7 +209,7 @@ function updateSlidesJson() {
             */
 
             slidesObj['pages'].push({
-                "title": "Cerner Info - " + path.basename(newSlidesArray[x], '.JPG'),
+                "title": "Info - " + path.basename(newSlidesArray[x], '.JPG'),
                 "type": "webpage",
                 "interval": 10000,
                 "url": path.basename(newSlidesArray[x]) + ".html"

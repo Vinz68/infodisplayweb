@@ -8,7 +8,10 @@
 // - HTML5/AngularJS implementation of a full screen kioskmode information/news/picture/webpage slide show viewr
 // 
 // 2017-02-06 Vincent van Beek - VibeSoft
+// 2019-10-27 Vincent van Beek - html subfolder used
 //-----------------------------------------------------------------------------------------------------
+"use strict";
+const path = require('path');               // The path module provides utilities for working with file and directory paths.
 var express = require('express');           // Express web application framework. http://expressjs.com/ 
 var fs = require('fs');                     // We will use the native file system
 var os = require('os');                     // OS specific info
@@ -16,9 +19,9 @@ var config = require('./infoDisplayConfig.json'); 	// Configuration file of this
 
 var APPNAME = "InfoDisplayWeb";             // Name of this app
 var PORT = process.env.PORT || 8088;        // Node will listen on port from environment setting, or when not set to port number...
+var hostname = 'localhost';                 // our hostname
 
 var app = express();                        // W're using Express
-
 
 var pagesList = [];	                        // Array with pages (URLs and settings) to be shown by the client browser in a slide show.
 
@@ -54,8 +57,10 @@ logger.debug('/pages =>' + JSON.stringify(pagesList, null, 4));
 
 
 //--------------------------------------------------------------------------------------------------------
-// static link the html-root folder to subdir "html" folder 
-app.use('/', express.static('/home/pi/html'));
+// static link to the 'html' sub directory 
+var wwwroot = path.join(__dirname, 'html');
+app.use('/',express.static(wwwroot));
+logger.info('html subfolder linked to: ' + wwwroot + '.');
 logger.info('Mapped html subfolder to http://'+ os.hostname() );
 
 //--------------------------------------------------------------------------------------------------------
